@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Código a Medida vs Plantillas (WordPress/Wix) | ADBA Diseños CDMX</title>
+  <meta name="description" content="Descubre por qué el desarrollo en Código a Medida supera a las plantillas prefabricadas: 100/100 velocidad Lighthouse, mayor seguridad y mejor SEO en Google.">
+  <meta name="keywords" content="codigo a medida vs wordpress, desventajas wordpress, beneficios desarrollo a medida, velocidad sitio web lighthouse, programacion web cdmx">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="ADBA Diseños Web & 3D">
+
+  <!-- Geo Tags -->
+  <meta name="geo.region" content="MX-DIF">
+  <meta name="geo.placename" content="Ciudad de México">
+  <meta name="geo.position" content="19.4124;-99.1415">
+  <meta name="ICBM" content="19.4124, -99.1415">
+
+  <link rel="canonical" href="https://adbadisenos.com/codigo-vs-plantilla.html">
+
+  <!-- OpenGraph -->
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Código a Medida vs Plantillas (WordPress/Wix) | ADBA Diseños CDMX">
+  <meta property="og:description" content="Comparativa técnica: ¿Por qué el código puro genera más ventas y mejor posicionamiento SEO en Google?">
+  <meta property="og:url" content="https://adbadisenos.com/codigo-vs-plantilla.html">
+  <meta property="og:site_name" content="ADBA Diseños Web & 3D">
+  <meta property="og:image" content="https://adbadisenos.com/assets/images/dental-hero.jpg">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Código a Medida vs Plantillas Prefabricadas",
+    "description": "Análisis comparativo de rendimiento, velocidad y seguridad entre código limpio a medida y sistemas de plantillas.",
+    "url": "https://adbadisenos.com/codigo-vs-plantilla.html",
+    "author": {
+      "@type": "Organization",
+      "name": "ADBA Diseños Web & 3D"
+    }
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- FIXED 3D CANVAS FOR ALL PAGES -->
+  <canvas id="bg-3d-canvas"></canvas>
+
+  <!-- Ambient Glow Lights -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- 1. CINTILLO EDITABLE DE PROMOCIONES -->
+  <div id="cintillo-banner" class="cintillo-wrapper">
+    <div class="cintillo-content">
+      <div class="cintillo-ticker">
+        <div class="cintillo-track">
+          <div class="cintillo-item">
+            <span class="cintillo-badge" data-cms-key="cintillo_badge_1">⚡ Oferta Limitada</span>
+            <span data-cms-key="cintillo_text_1">Dominio .COM + Hosting SSD + Certificado SSL GRATIS por 1 año en desarrollo Web Código a Medida 🎁</span>
+          </div>
+          <div class="cintillo-item">
+            <span class="cintillo-badge" data-cms-key="cintillo_badge_2">🚀 100/100 Speed</span>
+            <span data-cms-key="cintillo_text_2">Garantizamos velocidad ultrarrápida en móviles y Google Lighthouse 💯</span>
+          </div>
+          <div class="cintillo-item">
+            <span class="cintillo-badge" data-cms-key="cintillo_badge_3">📞 Atención Directa</span>
+            <span data-cms-key="cintillo_text_3">WhatsApp 5574562812 en Col. Obrera, CDMX | Lunes a Viernes 11:00 a 18:30 hrs 🇲🇽</span>
+          </div>
+        </div>
+      </div>
+      <button type="button" id="btn-close-cintillo" class="cintillo-close" title="Cerrar Cintillo">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- 2. HEADER & NAVBAR MULTIPÁGINA -->
+  <header class="header-nav">
+    <a href="index.html" class="brand-logo">
+      <img src="assets/images/logo.png" alt="ADBA Diseños Logo">
+    </a>
+
+    <nav>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="codigo-vs-plantilla.html" class="nav-link active">Código vs Plantilla</a></li>
+        <li><a href="paquetes.html" class="nav-link">Paquetes Web</a></li>
+        <li><a href="portafolio.html" class="nav-link">Portafolio</a></li>
+        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="https://wa.me/525574562812?text=Hola%20ADBA%20Dise%C3%B1os,%20quiero%20cotizar%20mi%20p%C3%A1gina%20web%20en%20C%C3%B3digo%20a%20Medida" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Cotizar
+      </a>
+      <button class="mobile-toggle" id="mobile-toggle"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="page-header-banner">
+        <span class="section-tag">💡 Comparativa Técnica de Alto Nivel</span>
+        <h1 class="section-title">¿Por qué Elegir Código a Medida sobre una Plantilla?</h1>
+        <p class="section-subtitle">
+          Las plantillas prefabricadas (WordPress/Wix/Shopify) parecen una solución rápida, pero con el tiempo alientan tu sitio con decenas de plugins y abren la puerta a hackeos. Descubre las diferencias fundamentales:
+        </p>
+      </div>
+
+      <div class="comparison-container">
+
+        <!-- Tarjeta 1: Código a Medida (WINNER) -->
+        <div class="comp-card custom-code">
+          <div class="comp-header">
+            <div>
+              <span style="color:var(--adba-cyan); font-size:0.8rem; font-weight:800; text-transform:uppercase;">Nuestra Especialidad</span>
+              <h3 class="comp-title">Desarrollo en Código a Medida</h3>
+            </div>
+            <span class="lighthouse-score-badge"><i class="fas fa-bolt"></i> 100 / 100</span>
+          </div>
+
+          <ul class="comp-list">
+            <li class="comp-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong style="color:#fff;">Velocidad Instantánea (Carga Sub-segundo):</strong>
+                <span style="display:block; color:var(--text-muted); font-size:0.9rem;">Carga inmediata en cualquier teléfono móvil 4G/5G sin retrasos de base de datos o servidores PHP lentos.</span>
+              </div>
+            </li>
+            <li class="comp-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong style="color:#fff;">Seguridad Inquebrantable (0% Riesgo de Hackeo):</strong>
+                <span style="display:block; color:var(--text-muted); font-size:0.9rem;">Sin base de datos MySQL expuesta ni plugins de terceros que puedan desactualizarse o ser infectados con malware.</span>
+              </div>
+            </li>
+            <li class="comp-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong style="color:#fff;">Diseño 100% Personalizado e Ilimitado:</strong>
+                <span style="display:block; color:var(--text-muted); font-size:0.9rem;">Libertad creativa total con animaciones 3D Three.js que cautivan la atención de tus clientes.</span>
+              </div>
+            </li>
+            <li class="comp-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong style="color:#fff;">SEO Técnico Premiado por Google:</strong>
+                <span style="display:block; color:var(--text-muted); font-size:0.9rem;">Estructura limpia y ligera que Google indexa y posiciona en los primeros lugares rápidamente.</span>
+              </div>
+            </li>
+            <li class="comp-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong style="color:#fff;">Sin Pagos de Licencias Ocultas:</strong>
+                <span style="display:block; color:var(--text-muted); font-size:0.9rem;">Cero cobros anuales obligatorios por Elementor Pro, WP Rocket o plugins de seguridad.</span>
+              </div>
+            </li>
+          </ul>
+
+          <div style="margin-top:30px;">
+            <a href="https://wa.me/525574562812?text=Hola%20ADBA%20Dise%C3%B1os,%20quiero%20contratar%20una%20p%C3%A1gina%20en%20C%C3%B3digo%20a%20Medida" target="_blank" class="btn-primary" style="width:100%; justify-content:center;">
+              <i class="fab fa-whatsapp"></i> Cotizar Código a Medida
+            </a>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2: Plantillas Genéricas (LOSER) -->
+        <div class="comp-card template-site">
+          <div class="comp-header">
+            <div>
+              <span style="color:#ef4444; font-size:0.8rem; font-weight:800; text-transform:uppercase;">El Riesgo Tradicional</span>
+              <h3 class="comp-title">Plantillas (WordPress / Wix)</h3>
+            </div>
+            <span class="lighthouse-score-badge lighthouse-score-bad"><i class="fas fa-exclamation-triangle"></i> 35 / 100</span>
+          </div>
+
+          <ul class="comp-list">
+            <li class="comp-item">
+              <i class="fas fa-times-circle"></i>
+              <div>
+                <strong style="color:#fff;">Carga Lenta e Inflada (25 a 45/100):</strong>
+                <span style="display:block; color:var(--text-muted); font-size:0.9rem;">Decenas de archivos JS/CSS inútiles cargándose al mismo tiempo hacen que tus clientes abandonen el sitio.</span>
+              </div>
+            </li>
+            <li class="comp-item">
+              <i class="fas fa-times-circle"></i>
+              <div>
+                <strong style="color:#fff;">Vulnerabilidad Constante a Infecciones:</strong>
+                <span style="display:block; color:var(--text-muted); font-size:0.9rem;">Plugins desactualizados que causan caídas del sitio o redirigen a páginas de spam.</span>
+              </div>
+            </li>
+            <li class="comp-item">
+              <i class="fas fa-times-circle"></i>
+              <div>
+                <strong style="color:#fff;">Diseño Genérico y Rígido:</strong>
+                <span style="display:block; color:var(--text-muted); font-size:0.9rem;">Tu página lucirá idéntica a miles de competidores porque depende de bloques rígidos prefabricados.</span>
+              </div>
+            </li>
+            <li class="comp-item">
+              <i class="fas fa-times-circle"></i>
+              <div>
+                <strong style="color:#fff;">Gastos Recurrentes de Mantenimiento:</strong>
+                <span style="display:block; color:var(--text-muted); font-size:0.9rem;">Renovaciones anuales de licencias pro y actualizaciones constantes para evitar incompatibilidades.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER MULTIPÁGINA -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="assets/images/logo.png" alt="ADBA Diseños Logo">
+          </a>
+          <p>Estudio de Diseño Gráfico Élite y Desarrollo Web en Código a Medida en Ciudad de México.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="codigo-vs-plantilla.html">Código vs Plantilla</a></li>
+            <li><a href="paquetes.html">Paquetes Web</a></li>
+            <li><a href="portafolio.html">Portafolio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Paquetes</h4>
+          <ul class="footer-links">
+            <li><a href="paquetes.html">Mantenimiento ($1,800)</a></li>
+            <li><a href="paquetes.html">Emprendedor ($6,800)</a></li>
+            <li><a href="paquetes.html">Pyme Pro ($14,500)</a></li>
+            <li><a href="paquetes.html">Tienda Online ($19,800)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contacto</h4>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/525574562812" target="_blank"><i class="fab fa-whatsapp"></i> 5574562812</a></li>
+            <li><a href="mailto:adbadiseno@gmail.com"><i class="fas fa-envelope"></i> adbadiseno@gmail.com</a></li>
+            <li><span>Lunes a Viernes 11:00 a 18:30 hrs</span></li>
+            <li><span>Col. Obrera, CDMX</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Diseñado por: <a href="index.html" class="footer-brand-link">ADBA Diseño 2026</a> &nbsp;&nbsp;&nbsp;&nbsp; Todos los derechos reservados &nbsp;&nbsp;&nbsp;&nbsp; <a href="index.html" class="footer-domain-link">www.adbadiseno.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Three.js CDN Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Application Scripts -->
+  <script src="assets/js/hero-3d.js"></script>
+  <script src="assets/js/admin-editor.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/ai-agent.js"></script>
+</body>
+</html>

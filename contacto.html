@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto & Ubicación 3D en CDMX | ADBA Diseños</title>
+  <meta name="description" content="Ponte en contacto con ADBA Diseños en Col. Obrera, Cuauhtémoc, CDMX. WhatsApp 5574562812. Horario: Lunes a Viernes 11:00 a 18:30 hrs.">
+  <meta name="keywords" content="contacto adba diseños, estudio diseño web cdmx, agencia web cuauhtemoc, cotizar pagina web cdmx, whatsapp desarrollo web mexico">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="ADBA Diseños Web & 3D">
+
+  <!-- Geo Tags -->
+  <meta name="geo.region" content="MX-DIF">
+  <meta name="geo.placename" content="Ciudad de México">
+  <meta name="geo.position" content="19.4124;-99.1415">
+  <meta name="ICBM" content="19.4124, -99.1415">
+
+  <link rel="canonical" href="https://adbadisenos.com/contacto.html">
+
+  <!-- OpenGraph -->
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contacto & Ubicación 3D en CDMX | ADBA Diseños">
+  <meta property="og:description" content="Atención directa por WhatsApp y en nuestra oficina en Col. Obrera, Cuauhtémoc, CDMX.">
+  <meta property="og:url" content="https://adbadisenos.com/contacto.html">
+  <meta property="og:site_name" content="ADBA Diseños Web & 3D">
+  <meta property="og:image" content="https://adbadisenos.com/assets/images/dental-hero.jpg">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contacto ADBA Diseños Web & 3D",
+    "url": "https://adbadisenos.com/contacto.html",
+    "mainEntity": {
+      "@type": "ProfessionalService",
+      "name": "ADBA Diseños Web & 3D",
+      "telephone": "+525574562812",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Colonia Obrera",
+        "addressLocality": "Cuauhtémoc",
+        "addressRegion": "CDMX",
+        "postalCode": "06800",
+        "addressCountry": "MX"
+      }
+    }
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- FIXED 3D CANVAS FOR ALL PAGES -->
+  <canvas id="bg-3d-canvas"></canvas>
+
+  <!-- Ambient Glow Lights -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- 1. CINTILLO EDITABLE DE PROMOCIONES -->
+  <div id="cintillo-banner" class="cintillo-wrapper">
+    <div class="cintillo-content">
+      <div class="cintillo-ticker">
+        <div class="cintillo-track">
+          <div class="cintillo-item">
+            <span class="cintillo-badge" data-cms-key="cintillo_badge_1">⚡ Oferta Limitada</span>
+            <span data-cms-key="cintillo_text_1">Dominio .COM + Hosting SSD + Certificado SSL GRATIS por 1 año en desarrollo Web Código a Medida 🎁</span>
+          </div>
+          <div class="cintillo-item">
+            <span class="cintillo-badge" data-cms-key="cintillo_badge_2">🚀 100/100 Speed</span>
+            <span data-cms-key="cintillo_text_2">Garantizamos velocidad ultrarrápida en móviles y Google Lighthouse 💯</span>
+          </div>
+          <div class="cintillo-item">
+            <span class="cintillo-badge" data-cms-key="cintillo_badge_3">📞 Atención Directa</span>
+            <span data-cms-key="cintillo_text_3">WhatsApp 5574562812 en Col. Obrera, CDMX | Lunes a Viernes 11:00 a 18:30 hrs 🇲🇽</span>
+          </div>
+        </div>
+      </div>
+      <button type="button" id="btn-close-cintillo" class="cintillo-close" title="Cerrar Cintillo">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- 2. HEADER & NAVBAR MULTIPÁGINA -->
+  <header class="header-nav">
+    <a href="index.html" class="brand-logo">
+      <img src="assets/images/logo.png" alt="ADBA Diseños Logo">
+    </a>
+
+    <nav>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="codigo-vs-plantilla.html" class="nav-link">Código vs Plantilla</a></li>
+        <li><a href="paquetes.html" class="nav-link">Paquetes Web</a></li>
+        <li><a href="portafolio.html" class="nav-link">Portafolio</a></li>
+        <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="https://wa.me/525574562812?text=Hola%20ADBA%20Dise%C3%B1os,%20quiero%20cotizar%20mi%20p%C3%A1gina%20web%20en%20C%C3%B3digo%20a%20Medida" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Cotizar
+      </a>
+      <button class="mobile-toggle" id="mobile-toggle"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="page-header-banner">
+        <span class="section-tag"><i class="fas fa-map-marker-alt"></i> Atención Inmediata</span>
+        <h1 class="section-title">Contáctanos & Visítanos en CDMX</h1>
+        <p class="section-subtitle">Estamos ubicados en la Col. Obrera, Cuauhtémoc, Ciudad de México. Atendemos proyectos locales y nacionales.</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center; margin-bottom:60px;">
+        <div style="background:var(--bg-card); border:1px solid var(--border-glass); border-radius:var(--radius-lg); padding:36px; backdrop-filter:blur(20px);">
+          <h3 style="font-family:var(--font-heading); color:#fff; font-size:1.6rem; margin-bottom:20px;">Información de Contacto</h3>
+          
+          <div style="display:flex; flex-direction:column; gap:24px; font-size:0.95rem;">
+            <div style="display:flex; align-items:center; gap:16px;">
+              <div class="icon-3d-box" style="width:44px; height:44px; font-size:1.2rem;"><i class="fas fa-map-marked-alt"></i></div>
+              <div>
+                <strong style="color:#fff; display:block;">Dirección Oficial:</strong>
+                <span style="color:var(--text-muted);">José T. Cuellar 79A Local H, Col. Obrera, 06800 CDMX</span>
+              </div>
+            </div>
+
+            <div style="display:flex; align-items:center; gap:16px;">
+              <div class="icon-3d-box" style="width:44px; height:44px; font-size:1.2rem; background:linear-gradient(135deg,#10b981,#06b6d4);"><i class="fab fa-whatsapp"></i></div>
+              <div>
+                <strong style="color:#fff; display:block;">WhatsApp Directo:</strong>
+                <a href="https://wa.me/525574562812" target="_blank" style="color:var(--adba-cyan); text-decoration:none; font-weight:700; font-size:1.1rem;">5574562812</a>
+              </div>
+            </div>
+
+            <div style="display:flex; align-items:center; gap:16px;">
+              <div class="icon-3d-box" style="width:44px; height:44px; font-size:1.2rem; background:var(--grad-gold-orange);"><i class="fas fa-envelope"></i></div>
+              <div>
+                <strong style="color:#fff; display:block;">Correo Electrónico:</strong>
+                <a href="mailto:adbadiseno@gmail.com" style="color:var(--adba-gold); text-decoration:none; font-weight:600;">adbadiseno@gmail.com</a>
+              </div>
+            </div>
+
+            <div style="display:flex; align-items:center; gap:16px;">
+              <div class="icon-3d-box" style="width:44px; height:44px; font-size:1.2rem; background:var(--grad-purple-pink);"><i class="fas fa-clock"></i></div>
+              <div>
+                <strong style="color:#fff; display:block;">Horario de Atención:</strong>
+                <span style="color:#fff; font-weight:600;">Lunes a Viernes de 11:00 a 18:30 hrs.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps 3D Frame -->
+        <div class="map-3d-container" style="height:420px;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.9402728005994!2d-99.14186252611522!3d19.414986441245766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fedc7308c605%3A0x110c50c43fb7f163!2sArte%20Digital%20Impresi%C3%B3n%20Digital%20y%20Pre-prensa!5e0!3m2!1ses!2smx!4v1787556134761!5m2!1ses!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER MULTIPÁGINA -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="assets/images/logo.png" alt="ADBA Diseños Logo">
+          </a>
+          <p>Estudio de Diseño Gráfico Élite y Desarrollo Web en Código a Medida en Ciudad de México.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="codigo-vs-plantilla.html">Código vs Plantilla</a></li>
+            <li><a href="paquetes.html">Paquetes Web</a></li>
+            <li><a href="portafolio.html">Portafolio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Paquetes</h4>
+          <ul class="footer-links">
+            <li><a href="paquetes.html">Mantenimiento ($1,800)</a></li>
+            <li><a href="paquetes.html">Emprendedor ($6,800)</a></li>
+            <li><a href="paquetes.html">Pyme Pro ($14,500)</a></li>
+            <li><a href="paquetes.html">Tienda Online ($19,800)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contacto</h4>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/525574562812" target="_blank"><i class="fab fa-whatsapp"></i> 5574562812</a></li>
+            <li><a href="mailto:adbadiseno@gmail.com"><i class="fas fa-envelope"></i> adbadiseno@gmail.com</a></li>
+            <li><span>Lunes a Viernes 11:00 a 18:30 hrs</span></li>
+            <li><span>Col. Obrera, CDMX</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Diseñado por: <a href="index.html" class="footer-brand-link">ADBA Diseño 2026</a> &nbsp;&nbsp;&nbsp;&nbsp; Todos los derechos reservados &nbsp;&nbsp;&nbsp;&nbsp; <a href="index.html" class="footer-domain-link">www.adbadiseno.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Three.js CDN Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Application Scripts -->
+  <script src="assets/js/hero-3d.js"></script>
+  <script src="assets/js/admin-editor.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/ai-agent.js"></script>
+</body>
+</html>

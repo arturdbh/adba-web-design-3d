@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio & Ejemplos de Páginas Web 3D | ADBA Diseños CDMX</title>
+  <meta name="description" content="Explora nuestro portafolio de sitios web en Código a Medida con demostraciones interactivas en vivo de Landing Pages, Multi-Página, Menús Digitales y E-Commerce.">
+  <meta name="keywords" content="portafolio paginas web mexico, ejemplos sitios web cdmx, demos landing page, demo tienda online, diseños web interactivos, paginas web con 3d mexico">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="ADBA Diseños Web & 3D">
+
+  <!-- Geo Tags -->
+  <meta name="geo.region" content="MX-DIF">
+  <meta name="geo.placename" content="Ciudad de México">
+  <meta name="geo.position" content="19.4124;-99.1415">
+  <meta name="ICBM" content="19.4124, -99.1415">
+
+  <link rel="canonical" href="https://adbadisenos.com/portafolio.html">
+
+  <!-- OpenGraph -->
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portafolio & Ejemplos de Páginas Web 3D | ADBA Diseños CDMX">
+  <meta property="og:description" content="Demostraciones en vivo de páginas web en código a medida con efectos 3D interactivos y fotografía profesional.">
+  <meta property="og:url" content="https://adbadisenos.com/portafolio.html">
+  <meta property="og:site_name" content="ADBA Diseños Web & 3D">
+  <meta property="og:image" content="https://adbadisenos.com/assets/images/dental-hero.jpg">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portafolio & Ejemplos de Páginas Web 3D | ADBA Diseños CDMX">
+  <meta name="twitter:description" content="Demostraciones en vivo de proyectos web 100% en código puro.">
+  <meta name="twitter:image" content="https://adbadisenos.com/assets/images/dental-hero.jpg">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Portafolio de Páginas Web ADBA Diseños",
+    "description": "Demostraciones en vivo de páginas web desarrolladas en código a medida con efectos 3D.",
+    "url": "https://adbadisenos.com/portafolio.html"
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- FIXED 3D CANVAS FOR ALL PAGES -->
+  <canvas id="bg-3d-canvas"></canvas>
+
+  <!-- Ambient Glow Lights -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- 1. CINTILLO EDITABLE DE PROMOCIONES -->
+  <div id="cintillo-banner" class="cintillo-wrapper">
+    <div class="cintillo-content">
+      <div class="cintillo-ticker">
+        <div class="cintillo-track">
+          <div class="cintillo-item">
+            <span class="cintillo-badge" data-cms-key="cintillo_badge_1">⚡ Oferta Limitada</span>
+            <span data-cms-key="cintillo_text_1">Dominio .COM + Hosting SSD + Certificado SSL GRATIS por 1 año en desarrollo Web Código a Medida 🎁</span>
+          </div>
+          <div class="cintillo-item">
+            <span class="cintillo-badge" data-cms-key="cintillo_badge_2">🚀 100/100 Speed</span>
+            <span data-cms-key="cintillo_text_2">Garantizamos velocidad ultrarrápida en móviles y Google Lighthouse 💯</span>
+          </div>
+          <div class="cintillo-item">
+            <span class="cintillo-badge" data-cms-key="cintillo_badge_3">📞 Atención Directa</span>
+            <span data-cms-key="cintillo_text_3">WhatsApp 5574562812 en Col. Obrera, CDMX | Lunes a Viernes 11:00 a 18:30 hrs 🇲🇽</span>
+          </div>
+        </div>
+      </div>
+      <button type="button" id="btn-close-cintillo" class="cintillo-close" title="Cerrar Cintillo">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- 2. HEADER & NAVBAR MULTIPÁGINA -->
+  <header class="header-nav">
+    <a href="index.html" class="brand-logo">
+      <img src="assets/images/logo.png" alt="ADBA Diseños Logo">
+    </a>
+
+    <nav>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="codigo-vs-plantilla.html" class="nav-link">Código vs Plantilla</a></li>
+        <li><a href="paquetes.html" class="nav-link">Paquetes Web</a></li>
+        <li><a href="portafolio.html" class="nav-link active">Portafolio</a></li>
+        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="https://wa.me/525574562812?text=Hola%20ADBA%20Dise%C3%B1os,%20quiero%20cotizar%20mi%20p%C3%A1gina%20web%20en%20C%C3%B3digo%20a%20Medida" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Cotizar
+      </a>
+      <button class="mobile-toggle" id="mobile-toggle"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="page-header-banner">
+        <span class="section-tag">🎨 Guía Visual & Proyectos Reales</span>
+        <h1 class="section-title">Portafolio & Tipos de Páginas Web</h1>
+        <p class="section-subtitle">
+          Entiende la estructura de cada proyecto para elegir el sitio ideal para tu empresa. Todos nuestros proyectos están programados en Código a Medida con efectos 3D.
+        </p>
+      </div>
+
+      <!-- PORTFOLIO GRID & TYPE EXPLANATIONS -->
+      <div class="portfolio-grid">
+
+        <!-- 1. LANDING PAGE -->
+        <div class="portfolio-card">
+          <div>
+            <div class="portfolio-img-wrapper">
+              <div class="browser-mockup-header">
+                <div class="browser-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                <div class="browser-address-bar">https://odontopro-cdmx.com (Landing 1 Sección)</div>
+              </div>
+              <div class="browser-preview-content" style="position:relative;">
+                <img src="assets/images/dental-hero.jpg" alt="Demo Landing Dental" style="width:100%; height:280px; object-fit:cover; display:block;">
+                <iframe src="demos/landing-dental.html" class="portfolio-iframe-preview" loading="lazy" style="position:absolute; top:0; left:0; width:100%; height:100%; opacity:0; hover:opacity-100; transition:0.3s;"></iframe>
+              </div>
+              <span class="portfolio-type-badge">Landing Page (1 Sección)</span>
+              <span class="portfolio-speed-badge">⚡ 100 / 100</span>
+            </div>
+
+            <div class="portfolio-body">
+              <h3 class="portfolio-title">Landing Page de Ventas Rápida</h3>
+              
+              <div class="portfolio-type-explain">
+                <strong>¿Qué es una Landing Page?</strong><br>
+                Es un sitio web compuesto por una única sección de alto impacto visual. Está diseñado con un solo objetivo: captar la atención inmediata del visitante y dirigirlo a enviar un WhatsApp o llamar. Sin menús distractores ni páginas secundarias.
+              </div>
+
+              <ul class="portfolio-features-mini">
+                <li><i class="fas fa-check"></i> Carga Sub-Segundo</li>
+                <li><i class="fas fa-check"></i> Botón WhatsApp Directo</li>
+                <li><i class="fas fa-check"></i> Formulario de Contacto</li>
+                <li><i class="fas fa-check"></i> Ideal para Campañas Google/FB</li>
+              </ul>
+
+              <a href="demos/landing-dental.html" target="_blank" class="btn-secondary" style="width:100%; justify-content:center; margin-bottom:12px; border-color:var(--adba-cyan);">
+                <i class="fas fa-desktop"></i> Ver Ejemplo en Vivo (Landing)
+              </a>
+              <a href="https://wa.me/525574562812?text=Hola%20ADBA%20Dise%C3%B1os,%20quiero%20cotizar%20una%20Landing%20Page%20($6,800%20MXN)" target="_blank" class="btn-primary" style="width:100%; justify-content:center;">
+                <i class="fab fa-whatsapp"></i> Cotizar Landing Page ($6,800)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. SITIO MULTIPÁGINA CORPORATIVO -->
+        <div class="portfolio-card">
+          <div>
+            <div class="portfolio-img-wrapper">
+              <div class="browser-mockup-header">
+                <div class="browser-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                <div class="browser-address-bar">https://arqstudio-cdmx.com (Multi-Página Corporativo)</div>
+              </div>
+              <div class="browser-preview-content" style="position:relative;">
+                <img src="assets/images/arq-villa.jpg" alt="Demo ArqStudio Corporativo" style="width:100%; height:280px; object-fit:cover; display:block;">
+                <iframe src="demos/multipagina-arquitectura.html" class="portfolio-iframe-preview" loading="lazy" style="position:absolute; top:0; left:0; width:100%; height:100%; opacity:0; hover:opacity-100; transition:0.3s;"></iframe>
+              </div>
+              <span class="portfolio-type-badge" style="border-color:var(--adba-gold); color:var(--adba-gold);">Multi-Página Corporativo</span>
+              <span class="portfolio-speed-badge">⚡ 100 / 100</span>
+            </div>
+
+            <div class="portfolio-body">
+              <h3 class="portfolio-title">Sitio Web Multi-Página Completo</h3>
+              
+              <div class="portfolio-type-explain" style="border-left-color:var(--adba-gold); background:rgba(251,191,36,0.08);">
+                <strong>¿Qué es un Sitio Multi-Página?</strong><br>
+                Es una estructura empresarial completa con diferentes páginas independientes (Inicio, Nosotros, Servicios, Galería de Trabajos, Términos y Contacto). Permite proyectar máxima autoridad de marca y posicionar múltiples servicios en Google CDMX.
+              </div>
+
+              <ul class="portfolio-features-mini">
+                <li><i class="fas fa-check"></i> 5+ Páginas Interconectadas</li>
+                <li><i class="fas fa-check"></i> Agente de IA para Atención</li>
+                <li><i class="fas fa-check"></i> Galería 3D de Trabajos</li>
+                <li><i class="fas fa-check"></i> SEO Avanzado en Google</li>
+              </ul>
+
+              <a href="demos/multipagina-arquitectura.html" target="_blank" class="btn-secondary" style="width:100%; justify-content:center; margin-bottom:12px; border-color:var(--adba-gold);">
+                <i class="fas fa-desktop"></i> Ver Ejemplo en Vivo (Multi-Página)
+              </a>
+              <a href="https://wa.me/525574562812?text=Hola%20ADBA%20Dise%C3%B1os,%20quiero%20cotizar%20un%20Sitio%20Multi-P%C3%A1gina%20Pyme%20Pro%20($14,500%20MXN)" target="_blank" class="btn-primary" style="width:100%; justify-content:center; background:var(--grad-gold-orange); color:#000;">
+                <i class="fab fa-whatsapp"></i> Cotizar Multi-Página ($14,500)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. WEB APP EN CÓDIGO NATIVO -->
+        <div class="portfolio-card">
+          <div>
+            <div class="portfolio-img-wrapper">
+              <div class="browser-mockup-header">
+                <div class="browser-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                <div class="browser-address-bar">https://gourmet3d-app.com (Web App & Menú)</div>
+              </div>
+              <div class="browser-preview-content" style="position:relative;">
+                <img src="assets/images/gourmet-ribeye.jpg" alt="Demo WebApp Gourmet" style="width:100%; height:280px; object-fit:cover; display:block;">
+                <iframe src="demos/webapp-restaurante.html" class="portfolio-iframe-preview" loading="lazy" style="position:absolute; top:0; left:0; width:100%; height:100%; opacity:0; hover:opacity-100; transition:0.3s;"></iframe>
+              </div>
+              <span class="portfolio-type-badge" style="border-color:var(--adba-purple); color:var(--adba-purple);">Código Nativo Purificado</span>
+              <span class="portfolio-speed-badge">⚡ 100 / 100</span>
+            </div>
+
+            <div class="portfolio-body">
+              <h3 class="portfolio-title">Web App & Sistema Dinámico</h3>
+              
+              <div class="portfolio-type-explain" style="border-left-color:var(--adba-purple); background:rgba(139,92,246,0.08);">
+                <strong>¿Qué es Desarrollo en Código Nativo?</strong><br>
+                Es la construcción de tu sitio o sistema web programado desde cero en HTML5, CSS3, JavaScript y WebGL sin usar WordPress ni plantillas. Garantiza 0% de riesgo de hackeo, cero plugins pesados y máxima velocidad en Google.
+              </div>
+
+              <ul class="portfolio-features-mini">
+                <li><i class="fas fa-check"></i> Cero Plugins Lentos</li>
+                <li><i class="fas fa-check"></i> Animaciones 3D Exclusivas</li>
+                <li><i class="fas fa-check"></i> 100% Código Seguro</li>
+                <li><i class="fas fa-check"></i> Máxima Calidad Visual</li>
+              </ul>
+
+              <a href="demos/webapp-restaurante.html" target="_blank" class="btn-secondary" style="width:100%; justify-content:center; margin-bottom:12px; border-color:var(--adba-purple);">
+                <i class="fas fa-desktop"></i> Ver Ejemplo en Vivo (Web App)
+              </a>
+              <a href="https://wa.me/525574562812?text=Hola%20ADBA%20Dise%C3%B1os,%20quiero%20cotizar%20un%20Desarrollo%20en%20C%C3%B3digo%20a%20Medida" target="_blank" class="btn-primary" style="width:100%; justify-content:center;">
+                <i class="fab fa-whatsapp"></i> Cotizar Código a Medida
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. TIENDA ONLINE / E-COMMERCE -->
+        <div class="portfolio-card">
+          <div>
+            <div class="portfolio-img-wrapper">
+              <div class="browser-mockup-header">
+                <div class="browser-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                <div class="browser-address-bar">https://urbanstyle-3d.com (E-Commerce Store)</div>
+              </div>
+              <div class="browser-preview-content" style="position:relative;">
+                <img src="assets/images/sneakers-black.jpg" alt="Demo E-Commerce Sneakers" style="width:100%; height:280px; object-fit:cover; display:block;">
+                <iframe src="demos/tienda-calzado.html" class="portfolio-iframe-preview" loading="lazy" style="position:absolute; top:0; left:0; width:100%; height:100%; opacity:0; hover:opacity-100; transition:0.3s;"></iframe>
+              </div>
+              <span class="portfolio-type-badge" style="border-color:var(--adba-green); color:var(--adba-green);">Tienda Virtual E-Commerce</span>
+              <span class="portfolio-speed-badge">⚡ 98 / 100</span>
+            </div>
+
+            <div class="portfolio-body">
+              <h3 class="portfolio-title">Tienda Virtual de Ventas 24/7</h3>
+              
+              <div class="portfolio-type-explain" style="border-left-color:var(--adba-green); background:rgba(16,185,129,0.08);">
+                <strong>¿Qué es un E-Commerce?</strong><br>
+                Es una tienda en línea completa con catálogo de productos por categorías, carrito de compras interactivo, cálculo de envíos automático y pasarela de cobros con tarjeta de crédito/débito (Stripe o MercadoPago).
+              </div>
+
+              <ul class="portfolio-features-mini">
+                <li><i class="fas fa-check"></i> Catálogo Organizado</li>
+                <li><i class="fas fa-check"></i> Carrito & Cobro con Tarjeta</li>
+                <li><i class="fas fa-check"></i> Gestión de Inventario</li>
+                <li><i class="fas fa-check"></i> Notificación de Pedidos</li>
+              </ul>
+
+              <a href="demos/tienda-calzado.html" target="_blank" class="btn-secondary" style="width:100%; justify-content:center; margin-bottom:12px; border-color:var(--adba-green);">
+                <i class="fas fa-desktop"></i> Ver Ejemplo en Vivo (E-Commerce)
+              </a>
+              <a href="https://wa.me/525574562812?text=Hola%20ADBA%20Dise%C3%B1os,%20quiero%20cotizar%20una%20Tienda%20Online%20E-Commerce" target="_blank" class="btn-primary" style="width:100%; justify-content:center; background:linear-gradient(135deg,#10b981,#06b6d4);">
+                <i class="fab fa-whatsapp"></i> Cotizar Tienda ($19,800+)
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SECCIÓN DE PREGUNTAS Y RESPUESTAS FRECUENTES (FAQ) -->
+      <section class="section" style="padding-top:80px;">
+        <div class="section-header">
+          <span class="section-tag">❓ RESPUESTAS CLARAS</span>
+          <h2 class="section-title">Preguntas & Respuestas Frecuentes</h2>
+          <p class="section-subtitle">Resolvemos tus dudas sobre tipos de páginas, diferencias técnicas y proceso de contratación.</p>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Cuál es la diferencia entre una Landing Page y un Sitio Multi-Página?</span>
+              <i class="fas fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              Una <strong>Landing Page</strong> es de 1 sola sección enfocada en vender un producto o servicio específico rápido con botón directo a WhatsApp. Un <strong>Sitio Multi-Página</strong> incluye varias páginas interconectadas (Inicio, Nosotros, Servicios, Portafolio, Contacto), ideal para proyectar mayor prestigio y posicionar múltiples palabras clave en Google.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Por qué elegir Código a Medida en lugar de una plantilla de WordPress o Wix?</span>
+              <i class="fas fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              Las páginas en <strong>Código a Medida</strong> cargan en menos de 1 segundo (100/100 en Google Lighthouse), **tienen 0% riesgo de hackeo** (sin base de datos MySQL ni plugins vulnerables que se desactualicen) y no requieren pagos anuales de licencias obligatorias como Elementor o WP Rocket.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Qué incluye el costo de mi página web?</span>
+              <i class="fas fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              Todos los paquetes de ADBA Diseños incluyen: diseño e interacción 3D, desarrollo 100% responsivo para celulares y tablets, botón directo a WhatsApp, **Dominio .COM o .COM.MX gratis por 1 año**, servidor **Hosting SSD de alta velocidad** y **Certificado de Seguridad SSL gratis por 1 año**.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Cómo funciona el Plan de Mantenimiento de $1,800 MXN/mes?</span>
+              <i class="fas fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              Es un servicio opcional para despreocuparte del sitio. Por **$1,800 MXN al mes** realizamos cambios menores de texto o fotografías mensuales, monitoreo de seguridad 24/7, respaldos semanales en la nube, optimización continua de velocidad y atención técnica prioritaria por WhatsApp.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Cuánto tiempo tardan en entregar la página web?</span>
+              <i class="fas fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              Los sitios informativos (Presencia Emprendedor & Pyme Pro) se entregan en <strong>3 a 5 días hábiles</strong>. Tiendas virtuales E-Commerce se entregan en <strong>7 a 12 días hábiles</strong> contados a partir de recibir los textos e imágenes.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Cómo se realiza la contratación y el pago?</span>
+              <i class="fas fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              Requerimos un <strong>50% de anticipo</strong> para ingresar el desarrollo a producción. El <strong>50% restante se liquida al entregar y probar la página terminada</strong> antes de conectarla a tu dominio oficial. Aceptamos transferencia bancaria SPEI, depósito en OXXO y tarjeta de crédito/débito.
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER MULTIPÁGINA -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="assets/images/logo.png" alt="ADBA Diseños Logo">
+          </a>
+          <p>Estudio de Diseño Gráfico Élite y Desarrollo Web en Código a Medida en Ciudad de México.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="codigo-vs-plantilla.html">Código vs Plantilla</a></li>
+            <li><a href="paquetes.html">Paquetes Web</a></li>
+            <li><a href="portafolio.html">Portafolio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Paquetes</h4>
+          <ul class="footer-links">
+            <li><a href="paquetes.html">Mantenimiento ($1,800)</a></li>
+            <li><a href="paquetes.html">Emprendedor ($6,800)</a></li>
+            <li><a href="paquetes.html">Pyme Pro ($14,500)</a></li>
+            <li><a href="paquetes.html">Tienda Online ($19,800)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contacto</h4>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/525574562812" target="_blank"><i class="fab fa-whatsapp"></i> 5574562812</a></li>
+            <li><a href="mailto:adbadiseno@gmail.com"><i class="fas fa-envelope"></i> adbadiseno@gmail.com</a></li>
+            <li><span>Lunes a Viernes 11:00 a 18:30 hrs</span></li>
+            <li><span>Col. Obrera, CDMX</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Diseñado por: <a href="index.html" class="footer-brand-link">ADBA Diseño 2026</a> &nbsp;&nbsp;&nbsp;&nbsp; Todos los derechos reservados &nbsp;&nbsp;&nbsp;&nbsp; <a href="index.html" class="footer-domain-link">www.adbadiseno.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Three.js CDN Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Application Scripts -->
+  <script src="assets/js/hero-3d.js"></script>
+  <script src="assets/js/admin-editor.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/ai-agent.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página No Encontrada (404) | ADBA Diseños CDMX</title>
+  <meta name="description" content="La página que buscas no existe o ha sido movida. Regresa a la página principal de ADBA Diseños.">
+  <meta name="robots" content="noindex, follow">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- FIXED 3D CANVAS -->
+  <canvas id="bg-3d-canvas"></canvas>
+
+  <!-- Ambient Glow Lights -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-badge">3D</span>
+        <span class="logo-text">ADBA <span class="logo-highlight">DISEÑOS</span></span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="paquetes.html" class="nav-link">Paquetes</a>
+        <a href="portafolio.html" class="nav-link">Portafolio</a>
+        <a href="codigo-vs-plantilla.html" class="nav-link">Código vs Plantilla</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+
+      <a href="https://wa.me/525574562812?text=Hola%20ADBA%20Dise%C3%B1os,%20necesito%20asistencia%20en%20el%20sitio%20web" target="_blank" class="btn-primary nav-cta">
+        <i class="fab fa-whatsapp"></i> 55 7456 2812
+      </a>
+    </div>
+  </header>
+
+  <!-- 404 MAIN HERO CONTENT -->
+  <main class="main-content">
+    <section class="hero" style="min-height:75vh; display:flex; align-items:center; justify-content:center; text-align:center; padding-top:140px;">
+      <div class="container" style="max-width:800px;">
+        <div style="font-size: 6rem; font-weight: 900; background: var(--grad-cyan-blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; margin-bottom: 20px;">
+          404
+        </div>
+        <h1 class="hero-title" style="font-size: 2.2rem; margin-bottom: 20px;">
+          ¡Página fuera de orbita!
+        </h1>
+        <p class="hero-description" style="margin: 0 auto 35px auto; max-width: 600px; color: var(--text-secondary);">
+          La página que intentas consultar no existe o ha sido movida a una nueva coordenada. No te preocupes, puedes volver a navegar en nuestros servicios principales.
+        </p>
+
+        <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+          <a href="index.html" class="btn-primary">
+            <i class="fas fa-home"></i> Ir a Inicio
+          </a>
+          <a href="paquetes.html" class="btn-secondary">
+            <i class="fas fa-box-open"></i> Ver Paquetes
+          </a>
+          <a href="portafolio.html" class="btn-secondary">
+            <i class="fas fa-laptop-code"></i> Ver Portafolio
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <div class="logo" style="margin-bottom:16px;">
+          <span class="logo-badge">3D</span>
+          <span class="logo-text">ADBA <span class="logo-highlight">DISEÑOS</span></span>
+        </div>
+        <p class="footer-desc">
+          Estudio de Diseño Gráfico Élite y Desarrollo Web Profesional 100% en Código a Medida con Efectos 3D e IA en CDMX.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="paquetes.html">Paquetes</a></li>
+          <li><a href="portafolio.html">Portafolio & Demos</a></li>
+          <li><a href="codigo-vs-plantilla.html">Código vs Plantillas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="terminos.html">Términos del Servicio</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Servicios Élite CDMX</h4>
+        <ul class="footer-links">
+          <li><a href="paquetes.html">Emprendedor ($6,800)</a></li>
+          <li><a href="paquetes.html">Pyme Pro ($14,500)</a></li>
+          <li><a href="paquetes.html">Tienda Online ($19,800)</a></li>
+          <li><a href="paquetes.html">E-Commerce Pro ($28,500)</a></li>
+          <li><a href="paquetes.html">Mantenimiento ($1,800/mes)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 ADBA Diseños Web & 3D. Desarrollado en Código a Medida en CDMX, México.</p>
+    </div>
+  </footer>
+
+  <!-- THREE.JS 3D CANVAS LOGIC -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="assets/js/3d-canvas.js"></script>
+
+  <!-- AGENTE DE IA INTERACTIVO -->
+  <script src="assets/js/ai-agent.js"></script>
+</body>
+</html>

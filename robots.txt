@@ -1,0 +1,10 @@
+# Robots.txt de ADBA Diseños Web & 3D
+User-agent: *
+Allow: /
+
+# Directivas para crawlers
+Disallow: /scratch/
+Disallow: /*.json$
+
+# Ubicación del Mapa del Sitio (Sitemap)
+Sitemap: https://adbadisenos.com/sitemap.xml
