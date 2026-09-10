@@ -19,7 +19,6 @@ class ADBAVisualAdmin {
 
   init() {
     this.createPasswordModal();
-    this.createFloatingTriggerButton();
     this.createToolbar();
     this.loadSavedText();
     this.setupEditableNodes();
@@ -28,17 +27,6 @@ class ADBAVisualAdmin {
     if (sessionStorage.getItem(this.authSessionKey) === 'true') {
       this.isAuthenticated = true;
     }
-  }
-
-  createFloatingTriggerButton() {
-    if (document.getElementById('btn-admin-floating-trigger')) return;
-    const btn = document.createElement('button');
-    btn.id = 'btn-admin-floating-trigger';
-    btn.className = 'btn-admin-bottom-trigger';
-    btn.type = 'button';
-    btn.innerHTML = '<i class="fas fa-shield-alt"></i> <span>Panel Admin (adba2026)</span>';
-    btn.onclick = () => this.requestAccess();
-    document.body.appendChild(btn);
   }
 
   createPasswordModal() {
