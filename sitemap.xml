@@ -7,7 +7,7 @@
   <!-- Página Principal (Home) -->
   <url>
     <loc>https://adbadisenos.com/</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
@@ -15,7 +15,7 @@
   <!-- Paquetes y Precios -->
   <url>
     <loc>https://adbadisenos.com/paquetes.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
@@ -23,7 +23,7 @@
   <!-- Portafolio y Demos -->
   <url>
     <loc>https://adbadisenos.com/portafolio.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
@@ -31,7 +31,7 @@
   <!-- Contacto -->
   <url>
     <loc>https://adbadisenos.com/contacto.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -39,7 +39,7 @@
   <!-- Código a Medida vs Plantilla -->
   <url>
     <loc>https://adbadisenos.com/codigo-vs-plantilla.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -47,7 +47,7 @@
   <!-- Términos y Condiciones -->
   <url>
     <loc>https://adbadisenos.com/terminos.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.50</priority>
   </url>
@@ -55,28 +55,28 @@
   <!-- DEMOS INTERACTIVOS -->
   <url>
     <loc>https://adbadisenos.com/demos/landing-dental.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
 
   <url>
     <loc>https://adbadisenos.com/demos/multipagina-arquitectura.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
 
   <url>
     <loc>https://adbadisenos.com/demos/webapp-restaurante.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
 
   <url>
     <loc>https://adbadisenos.com/demos/tienda-calzado.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
