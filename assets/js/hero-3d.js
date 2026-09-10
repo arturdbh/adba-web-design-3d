@@ -4,10 +4,28 @@
  * Renders Floating Cubes (4), Glowing Particles (5), and Dynamic Orbiting Lights & Parallax (6).
  */
 
-document.addEventListener('DOMContentLoaded', () => {
+function initHero3D() {
   const canvas = document.getElementById('bg-3d-canvas') || document.getElementById('hero-canvas');
-  if (!canvas || typeof THREE === 'undefined') return;
+  if (!canvas) return;
 
+  if (typeof THREE === 'undefined') {
+    let attempts = 0;
+    const interval = setInterval(() => {
+      attempts++;
+      if (typeof THREE !== 'undefined') {
+        clearInterval(interval);
+        startHero3DScene(canvas);
+      } else if (attempts > 30) {
+        clearInterval(interval);
+      }
+    }, 100);
+    return;
+  }
+
+  startHero3DScene(canvas);
+}
+
+function startHero3DScene(canvas) {
   // 1. Scene Setup
   const scene = new THREE.Scene();
 
@@ -271,4 +289,11 @@ document.addEventListener('DOMContentLoaded', () => {
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
   });
-});
+}
+
+// Run immediately or on DOMContentLoaded
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initHero3D);
+} else {
+  initHero3D();
+}
