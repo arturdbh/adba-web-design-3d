@@ -1,7 +1,8 @@
 /**
- * ADBA DESIGN 3D - NEON OBSIDIAN 3D ENGINE (THREE.JS)
- * Pure obsidian deep black canvas overlay with floating glowing neon geometries,
- * icosahedrons, orbiting lights, constellation particles, and fluid parallax.
+ * ADBA DESIGN 3D - SUBTLE NEON OBSIDIAN PARTICLE & CONSTELLATION ENGINE (THREE.JS)
+ * Pure obsidian deep black background (#000000) with subtle floating 3D luminescent
+ * particles, constellation lines, orbiting glow lights, and mouse parallax.
+ * Designed specifically to NEVER overlap or obscure typography.
  */
 
 function initHero3D() {
@@ -14,7 +15,7 @@ function initHero3D() {
       attempts++;
       if (typeof THREE !== 'undefined') {
         clearInterval(interval);
-        startHero3DScene(canvas);
+        startSubtle3DScene(canvas);
       } else if (attempts > 30) {
         clearInterval(interval);
       }
@@ -22,10 +23,10 @@ function initHero3D() {
     return;
   }
 
-  startHero3DScene(canvas);
+  startSubtle3DScene(canvas);
 }
 
-function startHero3DScene(canvas) {
+function startSubtle3DScene(canvas) {
   // 1. Scene Setup
   const scene = new THREE.Scene();
 
@@ -36,9 +37,9 @@ function startHero3DScene(canvas) {
     0.1,
     1000
   );
-  camera.position.z = 24;
+  camera.position.z = 28;
 
-  // 3. Renderer Setup
+  // 3. Renderer Setup with Pure Black Background
   const renderer = new THREE.WebGLRenderer({
     canvas: canvas,
     alpha: true,
@@ -47,149 +48,69 @@ function startHero3DScene(canvas) {
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
-  // 4. Dynamic High-Contrast Lighting System
-  const ambientLight = new THREE.AmbientLight(0xffffff, 0.9);
+  // 4. Soft Dynamic Lighting System
+  const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
   scene.add(ambientLight);
 
-  const cyanLight = new THREE.PointLight(0x06b6d4, 8.0, 90);
-  cyanLight.position.set(18, 18, 12);
+  const cyanLight = new THREE.PointLight(0x06b6d4, 5.0, 80);
+  cyanLight.position.set(20, 20, 10);
   scene.add(cyanLight);
 
-  const magentaLight = new THREE.PointLight(0xec4899, 8.0, 90);
-  magentaLight.position.set(-18, -18, 12);
-  scene.add(magentaLight);
+  const purpleLight = new THREE.PointLight(0x8b5cf6, 5.0, 80);
+  purpleLight.position.set(-20, -20, 10);
+  scene.add(purpleLight);
 
-  const goldLight = new THREE.PointLight(0xfbbf24, 6.0, 70);
-  goldLight.position.set(0, 20, -5);
+  const goldLight = new THREE.PointLight(0xfbbf24, 3.5, 60);
+  goldLight.position.set(0, 15, -10);
   scene.add(goldLight);
 
-  const group = new THREE.Group();
-  scene.add(group);
-
-  // Vibrant Neon Materials
-  const cyanNeonMat = new THREE.MeshStandardMaterial({
-    color: 0x06b6d4,
-    wireframe: true,
-    emissive: 0x06b6d4,
-    emissiveIntensity: 0.6,
-    roughness: 0.2,
-    metalness: 0.8
-  });
-
-  const goldNeonMat = new THREE.MeshStandardMaterial({
-    color: 0xfbbf24,
-    emissive: 0xd97706,
-    emissiveIntensity: 0.5,
-    roughness: 0.3,
-    metalness: 0.9
-  });
-
-  const purpleNeonMat = new THREE.MeshStandardMaterial({
-    color: 0x8b5cf6,
-    wireframe: true,
-    emissive: 0x8b5cf6,
-    emissiveIntensity: 0.7,
-    roughness: 0.2,
-    metalness: 0.8
-  });
-
-  const emeraldNeonMat = new THREE.MeshStandardMaterial({
-    color: 0x10b981,
-    emissive: 0x10b981,
-    emissiveIntensity: 0.5,
-    roughness: 0.2,
-    metalness: 0.8
-  });
-
-  // 5. Floating Geometries (Cubes, Icosahedrons, Octahedrons, Torus)
-  const floatingObjects = [];
-  const geometries = [
-    new THREE.BoxGeometry(1.2, 1.2, 1.2),
-    new THREE.IcosahedronGeometry(1.3, 0),
-    new THREE.OctahedronGeometry(1.4, 0),
-    new THREE.DodecahedronGeometry(1.1, 0),
-    new THREE.TorusGeometry(1.2, 0.4, 16, 50)
-  ];
-
-  const materials = [cyanNeonMat, goldNeonMat, purpleNeonMat, emeraldNeonMat];
-
-  for (let i = 0; i < 35; i++) {
-    const geo = geometries[i % geometries.length];
-    const mat = materials[i % materials.length];
-
-    const mesh = new THREE.Mesh(geo, mat);
-    mesh.position.set(
-      (Math.random() - 0.5) * 50,
-      (Math.random() - 0.5) * 36,
-      (Math.random() - 0.5) * 28
-    );
-    mesh.rotation.set(Math.random() * Math.PI, Math.random() * Math.PI, 0);
-    mesh.userData = {
-      rotX: (Math.random() - 0.5) * 0.025,
-      rotY: (Math.random() - 0.5) * 0.025,
-      floatSpeed: Math.random() * 0.012 + 0.006,
-      initialY: mesh.position.y,
-      initialX: mesh.position.x
-    };
-    group.add(mesh);
-    floatingObjects.push(mesh);
-  }
-
-  // Spin Acceleration on Click
-  window.addEventListener('click', () => {
-    floatingObjects.forEach(obj => {
-      obj.userData.rotX += 0.08;
-      obj.userData.rotY += 0.08;
-    });
-  });
-
-  // 6. Constellation of High-Visibility Particles
-  const particleCount = 800;
+  // 5. Constellation Particle Network (No large geometries to obscure text)
+  const particleCount = 1000;
   const particleGeo = new THREE.BufferGeometry();
   const particlePositions = new Float32Array(particleCount * 3);
 
   for (let i = 0; i < particleCount * 3; i += 3) {
-    particlePositions[i] = (Math.random() - 0.5) * 90;
-    particlePositions[i + 1] = (Math.random() - 0.5) * 60;
-    particlePositions[i + 2] = (Math.random() - 0.5) * 45;
+    particlePositions[i] = (Math.random() - 0.5) * 95;
+    particlePositions[i + 1] = (Math.random() - 0.5) * 65;
+    particlePositions[i + 2] = (Math.random() - 0.5) * 50 - 5; // Pushed slightly back for perfect typography clearance
   }
 
   particleGeo.setAttribute('position', new THREE.BufferAttribute(particlePositions, 3));
 
   const particleMat = new THREE.PointsMaterial({
     color: 0x06b6d4,
-    size: 0.45,
+    size: 0.28,
     transparent: true,
-    opacity: 0.9,
+    opacity: 0.75,
     blending: THREE.AdditiveBlending
   });
 
   const particleSystem = new THREE.Points(particleGeo, particleMat);
   scene.add(particleSystem);
 
-  // Line Constellations
+  // Soft Connecting Constellation Lines
   const lineMat = new THREE.LineBasicMaterial({
     color: 0x8b5cf6,
     transparent: true,
-    opacity: 0.35
+    opacity: 0.18
   });
 
   const lineGeo = new THREE.BufferGeometry();
   const linePositions = [];
   const posArr = particleGeo.attributes.position.array;
 
-  for (let i = 0; i < particleCount; i += 5) {
+  for (let i = 0; i < particleCount; i += 6) {
     const x1 = posArr[i * 3];
     const y1 = posArr[i * 3 + 1];
     const z1 = posArr[i * 3 + 2];
 
-    for (let j = i + 1; j < i + 5; j++) {
+    for (let j = i + 1; j < i + 6; j++) {
       const x2 = posArr[j * 3];
       const y2 = posArr[j * 3 + 1];
       const z2 = posArr[j * 3 + 2];
 
       const dist = Math.hypot(x1 - x2, y1 - y2, z1 - z2);
-      if (dist < 14) {
+      if (dist < 13) {
         linePositions.push(x1, y1, z1, x2, y2, z2);
       }
     }
@@ -199,7 +120,7 @@ function startHero3DScene(canvas) {
   const lineSystem = new THREE.LineSegments(lineGeo, lineMat);
   scene.add(lineSystem);
 
-  // Mouse Parallax Lerp
+  // 6. Smooth Mouse Parallax
   let mouseX = 0;
   let mouseY = 0;
   let targetX = 0;
@@ -209,40 +130,36 @@ function startHero3DScene(canvas) {
   const windowHalfY = window.innerHeight / 2;
 
   document.addEventListener('mousemove', (e) => {
-    mouseX = (e.clientX - windowHalfX) * 0.0012;
-    mouseY = (e.clientY - windowHalfY) * 0.0012;
+    mouseX = (e.clientX - windowHalfX) * 0.0008;
+    mouseY = (e.clientY - windowHalfY) * 0.0008;
   });
 
-  // Animation Loop
+  // 7. Animation Loop
   const clock = new THREE.Clock();
 
   function animate() {
     requestAnimationFrame(animate);
     const elapsedTime = clock.getElapsedTime();
 
-    floatingObjects.forEach(obj => {
-      obj.rotation.x += obj.userData.rotX;
-      obj.rotation.y += obj.userData.rotY;
-      obj.position.y = obj.userData.initialY + Math.sin(elapsedTime * 1.8 + obj.position.x) * 0.5;
-      obj.position.x = obj.userData.initialX + Math.cos(elapsedTime * 1.2 + obj.position.y) * 0.3;
-    });
+    // Gentle rotation of the particle constellation
+    particleSystem.rotation.y = elapsedTime * 0.015;
+    particleSystem.rotation.x = Math.sin(elapsedTime * 0.01) * 0.02;
+    lineSystem.rotation.y = elapsedTime * 0.015;
+    lineSystem.rotation.x = Math.sin(elapsedTime * 0.01) * 0.02;
 
-    particleSystem.rotation.y = elapsedTime * 0.03;
-    particleSystem.rotation.x = Math.sin(elapsedTime * 0.02) * 0.04;
-    lineSystem.rotation.y = elapsedTime * 0.03;
-    lineSystem.rotation.x = Math.sin(elapsedTime * 0.02) * 0.04;
+    // Orbiting point lights
+    cyanLight.position.x = Math.sin(elapsedTime * 0.5) * 22;
+    cyanLight.position.y = Math.cos(elapsedTime * 0.4) * 16;
 
-    cyanLight.position.x = Math.sin(elapsedTime * 0.7) * 22;
-    cyanLight.position.y = Math.cos(elapsedTime * 0.6) * 16;
+    purpleLight.position.x = -Math.sin(elapsedTime * 0.4) * 22;
+    purpleLight.position.y = -Math.cos(elapsedTime * 0.5) * 16;
 
-    magentaLight.position.x = -Math.sin(elapsedTime * 0.6) * 22;
-    magentaLight.position.y = -Math.cos(elapsedTime * 0.7) * 16;
+    // Parallax motion
+    targetX += (mouseX - targetX) * 0.04;
+    targetY += (mouseY - targetY) * 0.04;
 
-    targetX += (mouseX - targetX) * 0.06;
-    targetY += (mouseY - targetY) * 0.06;
-
-    camera.position.x = targetX * 14;
-    camera.position.y = -targetY * 14;
+    camera.position.x = targetX * 10;
+    camera.position.y = -targetY * 10;
     camera.lookAt(scene.position);
 
     renderer.render(scene, camera);
