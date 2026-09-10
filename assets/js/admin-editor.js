@@ -35,18 +35,18 @@ class ADBAVisualAdmin {
     const modalHtml = `
       <div id="modal-admin-auth" class="admin-auth-overlay" style="display:none;">
         <div class="admin-auth-card">
-          <div class="auth-icon"><i class="fas fa-lock"></i></div>
-          <h3>Acceso Administrador</h3>
-          <p>Ingresa la contraseña maestra para habilitar la edición de promociones en el cintillo, textos y reordenar bloques.</p>
+          <div class="auth-icon" style="background:rgba(16,185,129,0.2); color:#10b981;"><i class="fas fa-shield-alt"></i></div>
+          <h3>Panel de Mantenimiento & Control</h3>
+          <p>Ingresa la contraseña maestra <strong>adba2026</strong> para desbloquear el estado del servidor, monitoreo de seguridad y edición del sitio.</p>
           
           <form id="admin-auth-form" onsubmit="event.preventDefault(); window.adbaAdmin.verifyPassword();">
             <div class="auth-input-group">
               <i class="fas fa-key"></i>
-              <input type="password" id="admin-pass-input" placeholder="Contraseña de acceso..." required autocomplete="off">
+              <input type="password" id="admin-pass-input" placeholder="Contraseña (adba2026)..." required autocomplete="off">
             </div>
             <div style="display:flex; gap:12px; margin-top:20px;">
-              <button type="submit" class="btn-primary" style="flex:1; justify-content:center;">
-                <i class="fas fa-unlock"></i> Ingresar
+              <button type="submit" class="btn-primary" style="flex:1; justify-content:center; background:linear-gradient(135deg,#10b981,#06b6d4);">
+                <i class="fas fa-unlock"></i> Desbloquear Panel
               </button>
               <button type="button" class="btn-secondary" onclick="window.adbaAdmin.closeAuthModal()">
                 Cancelar
@@ -67,7 +67,7 @@ class ADBAVisualAdmin {
       <div id="admin-toolbar" class="admin-toolbar hidden">
         <div class="admin-status">
           <span class="admin-status-dot" id="admin-dot" style="background:#10b981; box-shadow:0 0 10px #10b981;"></span>
-          <span id="admin-status-text">CMS Admin: EDICIÓN EN VIVO</span>
+          <span id="admin-status-text">🛡️ PANEL DE MANTENIMIENTO: ACTIVO | SSD OK | SSL 256 bits | 100/100 Speed</span>
         </div>
         
         <button type="button" class="admin-btn" id="btn-toggle-admin" title="Activar/Desactivar Edición directa">

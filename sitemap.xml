@@ -20,14 +20,6 @@
     <priority>0.90</priority>
   </url>
 
-  <!-- Plan de Mantenimiento -->
-  <url>
-    <loc>https://adbadisenos.com/mantenimiento.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-
   <!-- Portafolio y Demos -->
   <url>
     <loc>https://adbadisenos.com/portafolio.html</loc>
