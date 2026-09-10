@@ -422,6 +422,69 @@ main {
   display: flex;
   align-items: center;
   background-color: transparent;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+
+/* HERO IT / TECH VIDEO BACKGROUND */
+.hero-video-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  border-radius: var(--radius-lg);
+}
+
+.hero-video-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  filter: contrast(1.2) brightness(0.85);
+}
+
+.hero-video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.85) 80%, #000000 100%);
+  z-index: 2;
+}
+
+/* PULSING VIOLET GLOW ON ALL CARDS & BOXES */
+.price-card,
+.comp-card,
+.tilt-card,
+.term-card,
+.faq-item,
+.feature-card,
+.map-3d-container,
+.contact-card,
+.demo-card,
+.icon-3d-box {
+  border: 1px solid rgba(139, 92, 246, 0.55) !important;
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.45) !important;
+  animation: pulseVioletGlow 3.5s ease-in-out infinite alternate !important;
+}
+
+@keyframes pulseVioletGlow {
+  0% {
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.35), 0 0 30px rgba(139, 92, 246, 0.15);
+    border-color: rgba(139, 92, 246, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(139, 92, 246, 0.75), 0 0 55px rgba(168, 85, 247, 0.45);
+    border-color: rgba(168, 85, 247, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.4), 0 0 35px rgba(139, 92, 246, 0.2);
+    border-color: rgba(139, 92, 246, 0.5);
+  }
 }
 
 .page-header-banner {
