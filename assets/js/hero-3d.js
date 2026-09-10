@@ -64,35 +64,35 @@ function startSubtle3DScene(canvas) {
   goldLight.position.set(0, 15, -10);
   scene.add(goldLight);
 
-  // 5. Constellation Particle Network (No large geometries to obscure text)
-  const particleCount = 1000;
+  // 5. High-Contrast Constellation Particle Network on Pure Black
+  const particleCount = 1200;
   const particleGeo = new THREE.BufferGeometry();
   const particlePositions = new Float32Array(particleCount * 3);
 
   for (let i = 0; i < particleCount * 3; i += 3) {
     particlePositions[i] = (Math.random() - 0.5) * 95;
     particlePositions[i + 1] = (Math.random() - 0.5) * 65;
-    particlePositions[i + 2] = (Math.random() - 0.5) * 50 - 5; // Pushed slightly back for perfect typography clearance
+    particlePositions[i + 2] = (Math.random() - 0.5) * 50 - 5;
   }
 
   particleGeo.setAttribute('position', new THREE.BufferAttribute(particlePositions, 3));
 
   const particleMat = new THREE.PointsMaterial({
     color: 0x06b6d4,
-    size: 0.28,
+    size: 0.35,
     transparent: true,
-    opacity: 0.75,
+    opacity: 0.85,
     blending: THREE.AdditiveBlending
   });
 
   const particleSystem = new THREE.Points(particleGeo, particleMat);
   scene.add(particleSystem);
 
-  // Soft Connecting Constellation Lines
+  // Connecting Constellation Lines
   const lineMat = new THREE.LineBasicMaterial({
     color: 0x8b5cf6,
     transparent: true,
-    opacity: 0.18
+    opacity: 0.25
   });
 
   const lineGeo = new THREE.BufferGeometry();

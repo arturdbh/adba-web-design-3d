@@ -71,35 +71,15 @@ body {
   pointer-events: none;
 }
 
-/* Ambient Glow Backgrounds */
+/* Ambient Glow Backgrounds (Deactivated for 100% Pure Pitch Black #000000 Background) */
 .ambient-glow {
+  display: none !important;
   position: fixed;
   border-radius: 50%;
   filter: blur(160px);
   pointer-events: none;
   z-index: 1;
-  opacity: 0.35;
-}
-.glow-1 {
-  width: 600px;
-  height: 600px;
-  background: var(--adba-cyan);
-  top: -150px;
-  left: -150px;
-}
-.glow-2 {
-  width: 700px;
-  height: 700px;
-  background: var(--adba-purple);
-  top: 35%;
-  right: -200px;
-}
-.glow-3 {
-  width: 550px;
-  height: 550px;
-  background: var(--adba-magenta);
-  bottom: 5%;
-  left: 15%;
+  opacity: 0;
 }
 
 /* Containers */
