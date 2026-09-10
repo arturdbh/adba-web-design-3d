@@ -349,6 +349,19 @@ class ADBAVisualAdmin {
         }
       }
     });
+
+    // Keyboard shortcut Ctrl+Shift+A or Alt+A to trigger Admin Login
+    document.addEventListener('keydown', (e) => {
+      if ((e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'a') || (e.altKey && e.key.toLowerCase() === 'a')) {
+        e.preventDefault();
+        this.requestAccess();
+      }
+    });
+
+    // Check URL hash #admin
+    if (window.location.hash === '#admin') {
+      setTimeout(() => this.requestAccess(), 300);
+    }
   }
 
   showToast(message, type = 'info') {
