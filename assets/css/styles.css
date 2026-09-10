@@ -60,14 +60,9 @@ body {
   min-height: 100vh;
 }
 
-/* FIXED 3D CANVAS POSITIONED DIRECTLY ON TOP OF PURE BLACK BACKGROUND */
+/* 3D CANVAS DEACTIVATED FOR 100% PURE CLEAN DEEP BLACK BACKGROUND */
 #bg-3d-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 2; /* Positioned directly on top of the black background */
+  display: none !important;
   pointer-events: none;
 }
 
